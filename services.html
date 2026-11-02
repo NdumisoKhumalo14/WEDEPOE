@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>School Transport Services & Pricing in Pretoria | Lagoqoza</title>
+  <meta name="description" content="Daily school transport, private bookings and route enquiries in Pretoria. Search our services and request a personalised quote from Lagoqoza School Transport.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/services.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lagoqoza School Transport">
+  <meta property="og:title" content="School Transport Services & Pricing in Pretoria | Lagoqoza">
+  <meta property="og:description" content="Daily school transport, private bookings and route enquiries in Pretoria. Search our services and request a personalised quote from Lagoqoza School Transport.">
+  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/services.html">
+  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/images/bus.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#102b52">
+  <link rel="icon" href="images/bus.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="newcss.css">
+  <script src="newjavascript.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lagoqoza School Transport home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>
+        Lagoqoza
+        <small>School Transport</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a class="active" aria-current="page" href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Enquire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section reveal">
+      <p class="eyebrow">Services and pricing</p>
+      <h1>Dependable travel, every day.</h1>
+      <p class="lead">Flexible transport options for school routines and special plans.</p>
+    </section>
+
+    <section class="section section-tint reveal">
+      <div class="cards three-up">
+        <article class="card">
+          <div class="icon" aria-hidden="true">01</div>
+          <h2>Daily school transport</h2>
+          <p>Regular transport to and from school for learners on our available routes.</p>
+          <ul>
+            <li>Morning pick-ups and afternoon drop-offs</li>
+            <li>Reliable drivers and child-focused care</li>
+            <li>Routes arranged around local demand</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">02</div>
+          <h2>Private bookings</h2>
+          <p>Transport for occasions where a trusted local service makes all the difference.</p>
+          <ul>
+            <li>School-related activities and events</li>
+            <li>Bookings arranged to suit your plans</li>
+            <li>Clear transport arrangements before travel</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">03</div>
+          <h2>Route enquiries</h2>
+          <p>Tell us your collection area and school so we can check availability.</p>
+          <ul>
+            <li>Collection area and destination</li>
+            <li>Preferred school-day schedule</li>
+            <li>Clear next steps and a quote</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="service-finder">
+      <p class="eyebrow">Find the right option</p>
+      <h2>Search our services</h2>
+      <p>Type a keyword, choose a category, or change the order. The list below updates instantly.</p>
+
+      <div class="finder-controls">
+        <label>Search
+          <input type="search" id="service-search" placeholder="e.g. morning, event, quote" autocomplete="off">
+        </label>
+        <label>Category
+          <select id="service-filter">
+            <option value="all">All services</option>
+            <option value="daily">Daily transport</option>
+            <option value="private">Private bookings</option>
+            <option value="support">Planning &amp; support</option>
+          </select>
+        </label>
+        <label>Sort by
+          <select id="service-sort">
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="category">Category</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="service-count" class="muted" aria-live="polite"></p>
+      <div id="service-list" class="cards service-results" aria-live="polite">
+        <noscript><p>Please enable JavaScript to search our services, or <a href="enquiry.html">send us an enquiry</a>.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section-tint reveal">
+      <p class="eyebrow">Simple, fair arrangements</p>
+      <h2>Request your personalised quote</h2>
+      <p>Pricing depends on your route, school, travel schedule, and booking needs. Send us a few details and we will confirm availability and provide a quote.</p>
+      <ol>
+        <li>Tell us your collection area, school, and transport needs.</li>
+        <li>We check the route and booking availability.</li>
+        <li>We provide clear pricing and the next steps for booking.</li>
+      </ol>
+      <a class="button button-primary" href="enquiry.html">Request a quote</a>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <p class="eyebrow">Good to know</p>
+      <h2>Frequently asked questions</h2>
+      <div class="accordion">
+        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">How do I book daily transport?</button></h3>
+        <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1" hidden>
+          <p>Complete our <a href="enquiry.html">enquiry form</a> with your collection area, school and the times you need. We check the route and reply with availability and a quote.</p>
+        </div>
+        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">How is the price worked out?</button></h3>
+        <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2" hidden>
+          <p>Pricing depends on the route, the school, how many trips you need each day and the booking length. That is why each family receives a personalised quote.</p>
+        </div>
+        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">Can I book transport for a school event?</button></h3>
+        <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3" hidden>
+          <p>Yes. Choose “Private booking” on the enquiry form and tell us the date, destination and number of learners.</p>
+        </div>
+        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">What if my area is not on a current route?</button></h3>
+        <div class="accordion-panel" id="faq-4" role="region" aria-labelledby="faq-btn-4" hidden>
+          <p>Routes are arranged around local demand. Send an enquiry anyway; we will tell you whether we can add your area.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>
+          Lagoqoza
+          <small>School Transport</small>
+        </span>
+      </a>
+      <p>Safe, reliable and affordable school transport for our community.</p>
+      <p><em>Reliable ride, happy learners.</em></p>
+    </div>
+
+    <div>
+      <h2>Explore</h2>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Make an enquiry</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h2>Ready to get started?</h2>
+      <p>Tell us about your transport needs and we will get back to you.</p>
+      <a class="footer-cta" href="enquiry.html">Enquire today →</a>
+    </div>
+
+    <p class="copyright">
+      © <span data-year></span> Lagoqoza School Transport
+    </p>
+  </footer>
+</body>
+</html>

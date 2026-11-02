@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Enquire About School Transport | Lagoqoza School Transport</title>
+  <meta name="description" content="Ask about school transport availability and pricing in Pretoria. Send a quick enquiry and Lagoqoza School Transport will respond about routes, availability and your quote.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/enquiry.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lagoqoza School Transport">
+  <meta property="og:title" content="Enquire About School Transport | Lagoqoza School Transport">
+  <meta property="og:description" content="Ask about school transport availability and pricing in Pretoria. Send a quick enquiry and Lagoqoza School Transport will respond about routes, availability and your quote.">
+  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/enquiry.html">
+  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/images/bus.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#102b52">
+  <link rel="icon" href="images/bus.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="newcss.css">
+  <script src="newjavascript.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lagoqoza School Transport home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>
+        Lagoqoza
+        <small>School Transport</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" aria-current="page" href="enquiry.html">Enquire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section reveal">
+      <p class="eyebrow">Make an enquiry</p>
+      <h1>Let’s get your journey moving.</h1>
+      <p class="lead">Share what you need and we will get back to you about availability and pricing.</p>
+    </section>
+
+    <section class="section section-tint">
+      <h2>Tell us about the trip</h2>
+      <p>Use this form to ask about our services, pricing or availability. Fields marked with * are required.</p>
+
+      <form id="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="field">
+          <label for="name">Your name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="60" required aria-describedby="name-error">
+          
+          <span class="error" id="name-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number *</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="e.g. 082 123 4567" required aria-describedby="phone-hint phone-error">
+          <small class="hint" id="phone-hint">South African number, e.g. 0821234567 or +27821234567.</small>
+          <span class="error" id="phone-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+          <small class="hint" id="email-hint">Optional, but helps us reply with a written quote.</small>
+          <span class="error" id="email-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="type">Enquiry type *</label>
+          <select id="type" name="type" required aria-describedby="type-error"><option value="">Please select</option><option value="daily">Daily school transport</option><option value="private">Private booking</option><option value="general">General question</option></select>
+          
+          <span class="error" id="type-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="school">School or destination *</label>
+          <input type="text" id="school" name="school" minlength="2" maxlength="80" required aria-describedby="school-error">
+          
+          <span class="error" id="school-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="area">Collection area *</label>
+          <input type="text" id="area" name="area" minlength="2" maxlength="80" required aria-describedby="area-error">
+          
+          <span class="error" id="area-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="startdate">Preferred start date</label>
+          <input type="date" id="startdate" name="startdate" aria-describedby="startdate-error">
+          <small class="hint" id="startdate-hint">Optional. Must be today or a future date.</small>
+          <span class="error" id="startdate-error" role="alert"></span>
+        </div>
+        <fieldset id="timing-fieldset">
+          <legend>When is transport needed?</legend>
+          <label><input type="checkbox" name="morning"> Morning pick-up</label><br>
+          <label><input type="checkbox" name="afternoon"> Afternoon drop-off</label><br>
+          <label><input type="checkbox" name="privateBooking"> Private booking</label>
+          <span class="error" id="timing-error" role="alert"></span>
+        </fieldset>
+        <div class="field">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" rows="6" maxlength="1000" aria-describedby="message-hint message-error"></textarea>
+          <small class="hint" id="message-hint">Up to 1000 characters. <span id="message-count">0</span>/1000</small>
+          <span class="error" id="message-error" role="alert"></span>
+        </div>
+        <button class="button button-primary" type="submit" id="enquiry-submit">Send enquiry</button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite" tabindex="-1"></p>
+      </form>
+
+      <div id="enquiry-response" class="response-card" hidden></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>
+          Lagoqoza
+          <small>School Transport</small>
+        </span>
+      </a>
+      <p>Safe, reliable and affordable school transport for our community.</p>
+      <p><em>Reliable ride, happy learners.</em></p>
+    </div>
+
+    <div>
+      <h2>Explore</h2>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Make an enquiry</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h2>Ready to get started?</h2>
+      <p>Tell us about your transport needs and we will get back to you.</p>
+      <a class="footer-cta" href="enquiry.html">Enquire today →</a>
+    </div>
+
+    <p class="copyright">
+      © <span data-year></span> Lagoqoza School Transport
+    </p>
+  </footer>
+</body>
+</html>

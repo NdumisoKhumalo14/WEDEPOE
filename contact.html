@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Contact Lagoqoza School Transport | Pretoria</title>
+  <meta name="description" content="Contact Lagoqoza School Transport in Pretoria. Send a message, view our service area map and find out how to arrange daily or private school transport.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lagoqoza School Transport">
+  <meta property="og:title" content="Contact Lagoqoza School Transport | Pretoria">
+  <meta property="og:description" content="Contact Lagoqoza School Transport in Pretoria. Send a message, view our service area map and find out how to arrange daily or private school transport.">
+  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/contact.html">
+  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/images/bus.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#102b52">
+  <link rel="icon" href="images/bus.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="newcss.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="newjavascript.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lagoqoza School Transport home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>
+        Lagoqoza
+        <small>School Transport</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Enquire</a>
+      <a class="active" aria-current="page" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>We would love to hear from you.</h1>
+      <p class="lead">Send us a general message below. For route availability and pricing, use our <a href="enquiry.html">enquiry form</a>.</p>
+    </section>
+
+    <section class="section section-tint">
+      <h2>Send us a message</h2>
+      <p>Your message is compiled into an email addressed to Lagoqoza School Transport. Check it, then press “Open in my email app” to send it. Fields marked with * are required.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">Your name *</label>
+          <input type="text" id="c-name" name="name" autocomplete="name" minlength="2" maxlength="60" required aria-describedby="c-name-error">
+          
+          <span class="error" id="c-name-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="c-email">Email address *</label>
+          <input type="email" id="c-email" name="email" autocomplete="email" required aria-describedby="c-email-error">
+          
+          <span class="error" id="c-email-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="c-phone">Phone number</label>
+          <input type="tel" id="c-phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="c-phone-hint c-phone-error">
+          <small class="hint" id="c-phone-hint">Optional. South African number.</small>
+          <span class="error" id="c-phone-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="c-topic">Type of message *</label>
+          <select id="c-topic" name="topic" required aria-describedby="c-topic-error"><option value="">Please select</option><option>General message</option><option>Feedback or compliment</option><option>Complaint</option><option>Partnership or school enquiry</option></select>
+          
+          <span class="error" id="c-topic-error" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="c-message">Your message *</label>
+          <textarea id="c-message" name="message" rows="7" minlength="10" maxlength="1000" required aria-describedby="c-message-hint c-message-error"></textarea>
+          <small class="hint" id="c-message-hint">Between 10 and 1000 characters. <span id="c-message-count">0</span>/1000</small>
+          <span class="error" id="c-message-error" role="alert"></span>
+        </div>
+        <button class="button button-primary" type="submit">Compile my email</button>
+        <p id="contact-status" class="form-message" role="status" aria-live="polite" tabindex="-1"></p>
+      </form>
+
+      <div id="email-preview" class="response-card" hidden>
+        <h3>Your email is ready</h3>
+        <dl>
+          <dt>To</dt><dd id="preview-to"></dd>
+          <dt>Subject</dt><dd id="preview-subject"></dd>
+          <dt>Message</dt><dd><pre id="preview-body"></pre></dd>
+        </dl>
+        <a class="button button-primary" id="send-email" href="#">Open in my email app</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="eyebrow">Service area</p>
+      <h2>Where we operate</h2>
+      <p>We support local school transport routes around Pretoria. Tell us your collection area and destination so we can check the best option for your family.</p>
+      <div id="map" class="map" role="region" aria-label="Map of the Lagoqoza School Transport service area in Pretoria">
+        <noscript><p>The interactive map needs JavaScript. We serve local routes around Pretoria, Gauteng.</p></noscript>
+      </div>
+      <p class="muted">Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer" target="_blank">OpenStreetMap</a> contributors.</p>
+
+      <h3>Daily transport</h3>
+      <p>Morning pick-ups and afternoon drop-offs are available, subject to route availability.</p>
+      <h3>Private bookings</h3>
+      <p>Private school-related transport bookings are available by arrangement.</p>
+      <h3>Business hours</h3>
+      <p>Transport planning is arranged around school-day schedules.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>
+          Lagoqoza
+          <small>School Transport</small>
+        </span>
+      </a>
+      <p>Safe, reliable and affordable school transport for our community.</p>
+      <p><em>Reliable ride, happy learners.</em></p>
+    </div>
+
+    <div>
+      <h2>Explore</h2>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Make an enquiry</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h2>Ready to get started?</h2>
+      <p>Tell us about your transport needs and we will get back to you.</p>
+      <a class="footer-cta" href="enquiry.html">Enquire today →</a>
+    </div>
+
+    <p class="copyright">
+      © <span data-year></span> Lagoqoza School Transport
+    </p>
+  </footer>
+</body>
+</html>

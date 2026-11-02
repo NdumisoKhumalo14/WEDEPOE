@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Gallery | Lagoqoza School Transport Pretoria</title>
+  <meta name="description" content="Browse the Lagoqoza School Transport gallery: our minibus, happy learners, school arrivals and route planning in Pretoria.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/gallery.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lagoqoza School Transport">
+  <meta property="og:title" content="Gallery | Lagoqoza School Transport Pretoria">
+  <meta property="og:description" content="Browse the Lagoqoza School Transport gallery: our minibus, happy learners, school arrivals and route planning in Pretoria.">
+  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/gallery.html">
+  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/images/bus.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#102b52">
+  <link rel="icon" href="images/bus.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="newcss.css">
+  <script src="newjavascript.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lagoqoza School Transport home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>
+        Lagoqoza
+        <small>School Transport</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a class="active" aria-current="page" href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Enquire</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section reveal">
+      <p class="eyebrow">Gallery</p>
+      <h1>Life on the route.</h1>
+      <p class="lead">Select any picture to view it larger. Use the arrow keys to move between images and Esc to close.</p>
+      <div class="gallery-grid" id="gallery">
+        <button class="gallery-item" type="button" data-full="images/bus.svg" data-alt="Yellow Lagoqoza school minibus parked on a sunny road" data-caption="Our minibus">
+          <img src="images/bus.svg" alt="Yellow Lagoqoza school minibus parked on a sunny road" width="800" height="500" loading="lazy">
+          <span>Our minibus</span>
+        </button>
+        <button class="gallery-item" type="button" data-full="images/happy-learners.svg" data-alt="Three smiling learners in school uniform walking together" data-caption="Happy learners">
+          <img src="images/happy-learners.svg" alt="Three smiling learners in school uniform walking together" width="800" height="500" loading="lazy">
+          <span>Happy learners</span>
+        </button>
+        <button class="gallery-item" type="button" data-full="images/school-gate.svg" data-alt="School building with learners arriving at the gate" data-caption="Arriving at school">
+          <img src="images/school-gate.svg" alt="School building with learners arriving at the gate" width="800" height="500" loading="lazy">
+          <span>Arriving at school</span>
+        </button>
+        <button class="gallery-item" type="button" data-full="images/route-map.svg" data-alt="Simple route map showing a dashed path from a pick-up point to a school" data-caption="Planning the route">
+          <img src="images/route-map.svg" alt="Simple route map showing a dashed path from a pick-up point to a school" width="800" height="500" loading="lazy">
+          <span>Planning the route</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+      <figure>
+        <img id="lightbox-img" src="" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>
+          Lagoqoza
+          <small>School Transport</small>
+        </span>
+      </a>
+      <p>Safe, reliable and affordable school transport for our community.</p>
+      <p><em>Reliable ride, happy learners.</em></p>
+    </div>
+
+    <div>
+      <h2>Explore</h2>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services &amp; pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Make an enquiry</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h2>Ready to get started?</h2>
+      <p>Tell us about your transport needs and we will get back to you.</p>
+      <a class="footer-cta" href="enquiry.html">Enquire today →</a>
+    </div>
+
+    <p class="copyright">
+      © <span data-year></span> Lagoqoza School Transport
+    </p>
+  </footer>
+</body>
+</html>
